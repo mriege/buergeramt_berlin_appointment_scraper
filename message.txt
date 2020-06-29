@@ -1,0 +1,9 @@
+### Neuer Bürgeramtstermin ###
+
+DATE:  ${DATE}
+
+URL: ${URL}
+
+BID: ${BID}
+
+SID: ${SID}
