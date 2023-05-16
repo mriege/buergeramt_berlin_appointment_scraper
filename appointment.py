@@ -20,10 +20,10 @@ BUERGERAMT_IDS = [ 122210, 122217, 122219, 122227, 122231, 122243, 122252, 12226
 SERVICE_IDS = [ 120686, 120335, 120697, 120703, 121151 ]
 COMBINATIONS = [(x,y) for x in BUERGERAMT_IDS for y in SERVICE_IDS] 
 
-MAIL_HOST = 'webexperte.berlin'
+MAIL_HOST = 'XXX'
 MAIL_PORT = 587
-MAIL_ADDRESS = 'marco@webexperte.berlin'
-MAIL_PASSWORD = '9Kleinbeeren3!123'
+MAIL_ADDRESS = 'XXX'
+MAIL_PASSWORD = 'XXX'
 MAIL_MESSAGE_FILE = 'message.txt'
 ##### SETTINGS END #####
 
@@ -55,7 +55,7 @@ def get_tor_session():
 
 def renew_tor_ip():
     with Controller.from_port(port=9051) as controller:
-        controller.authenticate(password="9Kleinbeeren3!")
+        controller.authenticate(password="XXX")
         controller.signal(Signal.NEWNYM)
 
 def fetch(url):
